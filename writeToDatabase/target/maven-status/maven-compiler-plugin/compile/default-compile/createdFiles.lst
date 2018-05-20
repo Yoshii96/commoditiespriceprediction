@@ -1,0 +1,7 @@
+JSONToSQLRecord.class
+SQLRecordRepository.class
+CSVToSQLRecord.class
+DBStructureCreator.class
+App.class
+SQLRecordRepositoryImpl.class
+SQLRecord.class
