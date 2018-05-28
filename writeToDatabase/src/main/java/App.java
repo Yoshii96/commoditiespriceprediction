@@ -12,10 +12,10 @@ import java.util.Properties;
 public class App {
 
 
-    private final String url = "";
-    private final String user = "";
-    private final String passwd = "";
-    private static String pathToFile = "";
+    private final String url = "jdbc:postgresql://localhost:5432/commoditiespriceprediction";
+    private final String user = "postgres";
+    private final String passwd = "postgres";
+    private static String pathToFile = "../data/GOLD.json";
 
     public static void main(String[] args) {
 
@@ -30,8 +30,8 @@ public class App {
 
 
         App data = new App();
-
         //creates connection to database
+
         Connection conn = data.connect();
 
         DBStructureCreator dbStructureCreator = new DBStructureCreator(conn);
