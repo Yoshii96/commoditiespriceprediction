@@ -13,8 +13,8 @@ def create_model(look_back):
     model.compile(loss='mean_squared_error', optimizer='adam')
     return model
 
-def fit_model(model, trainX, trainY, epochs, batch_size, verbose):    
-    model.fit(trainX, trainY, epochs, batch_size, verbose)
+def fit_model(model, trainX, trainY, epochs, batch_size):    
+    model.fit(trainX, trainY, epochs=epochs, batch_size=batch_size, verbose=2)
     return model
 
 def make_prediction(model, trainX, testX):
